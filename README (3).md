@@ -57,7 +57,8 @@ Provider:
 #### 1. Retrieve a list of all patients whose email ends in “.com”. Include their first name, last name, phone number, and email.
 
 
-![query](https://private-user-images.githubusercontent.com/272872318/573745786-c1542fbb-475f-44e0-8e4a-da17a9bd0eb8.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzUyNjc5NjksIm5iZiI6MTc3NTI2NzY2OSwicGF0aCI6Ii8yNzI4NzIzMTgvNTczNzQ1Nzg2LWMxNTQyZmJiLTQ3NWYtNDRlMC04ZTRhLWRhMTdhOWJkMGViOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQwNFQwMTU0MjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NTA4MWE2MzczMGJhYjFlNDUzNGU3MTFiMjE2NGI5Y2U3MjRlMWM1MmExNWYxZGJiMWM5OTIxZDg0ZGU1MjZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.1oGzf88HS4S2XbfQ8fx-dfqEKsFSkL7p2Ub1CbgGWsM)
+<img width="1774" height="1143" alt="Screenshot 2026-04-03 222029" src="https://github.com/user-attachments/assets/a8c0961b-e0dc-4a2c-8e2d-01148167971f" />
+
 #### Description: 
 This query shows patients whose email addresses end in ".com". It uses a regular expression (REGEXP) to filter emails that match this pattern. The results return the patient’s information for anyone whose email ends with ".com".
 
