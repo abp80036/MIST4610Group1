@@ -53,6 +53,7 @@ Adds WHERE DATE BETWEEN ... AND ... to the vaccination query. Analytical value: 
 
 ### Chart 1 — Case-Fatality Rate (Bar Chart) 
 Pulls from WHO_TIMESERIES and divides DEATHS_TOTAL_PER_100000 by CASES_TOTAL_PER_100000 to estimate how lethal COVID was relative to confirmed cases in each country. Originally hard-coded to show 10 countries.
+
 ### Chart 2 — Vaccinations Recorded Per Day (Area Chart) 
 Pulls from OWID_VACCINATIONS and counts vaccination records grouped by date, showing the global roll-out trend over time.
 
