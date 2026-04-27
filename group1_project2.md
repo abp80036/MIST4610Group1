@@ -53,9 +53,12 @@ Adds WHERE DATE BETWEEN ... AND ... to the vaccination query. Analytical value: 
 
 ### Chart 1 — Case-Fatality Rate (Bar Chart) 
 Pulls from WHO_TIMESERIES and divides DEATHS_TOTAL_PER_100000 by CASES_TOTAL_PER_100000 to estimate how lethal COVID was relative to confirmed cases in each country. Originally hard-coded to show 10 countries.
+<img width="3252" height="842" alt="image" src="https://github.com/user-attachments/assets/62f0eabd-45b7-4893-8b8b-7c0309922fec" />
 
 ### Chart 2 — Vaccinations Recorded Per Day (Area Chart) 
 Pulls from OWID_VACCINATIONS and counts vaccination records grouped by date, showing the global roll-out trend over time.
+<img width="3228" height="850" alt="image" src="https://github.com/user-attachments/assets/61820d9c-80a6-410f-bc12-27aae578b852" />
+
 
 ## Streamlit App
 
@@ -68,3 +71,11 @@ The original Phase 2 app.py was provided and Claude was asked to reproduce both 
 Parameterized SQL driven by UI state replaced hard-coded queries; a sidebar with three controls was added; a dark custom theme with KPI metric cards under each chart was introduced; duplicate-column handling was refactored into a shared helper.
 ### What was modified/rejected: 
 @st.fragment wrappers were removed in favor of cleaner sidebar-driven reruns. A plotly migration was rejected to stay within Snowflake's sandboxed runtime. The CONTINENT column was corrected to LOCATION after a SQL compilation error revealed it didn't exist in the table. A execute_query.clear() call was added at startup to bust stale cached query IDs from earlier broken versions.
+###Case-Fatality Rate
+<img width="3350" height="1749" alt="image" src="https://github.com/user-attachments/assets/5ada334f-79a0-43af-97fb-dfc6b71976dc" />
+###Vaccinations Recorded Per Day (Global Information off 10000 data points):
+<img width="3338" height="1765" alt="image" src="https://github.com/user-attachments/assets/a2fa9e56-5385-4c77-873f-7b0923619b36" />
+
+###Vaccinations Recorded Per Day (With Selected Countries):
+<img width="3280" height="1733" alt="image" src="https://github.com/user-attachments/assets/5707e79b-f203-4081-a5c2-81e0d7a2ff21" />
+
