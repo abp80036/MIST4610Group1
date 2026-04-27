@@ -71,11 +71,16 @@ The original Phase 2 app.py was provided and Claude was asked to reproduce both 
 Parameterized SQL driven by UI state replaced hard-coded queries; a sidebar with three controls was added; a dark custom theme with KPI metric cards under each chart was introduced; duplicate-column handling was refactored into a shared helper.
 ### What was modified/rejected: 
 @st.fragment wrappers were removed in favor of cleaner sidebar-driven reruns. A plotly migration was rejected to stay within Snowflake's sandboxed runtime. The CONTINENT column was corrected to LOCATION after a SQL compilation error revealed it didn't exist in the table. A execute_query.clear() call was added at startup to bust stale cached query IDs from earlier broken versions.
-###Case-Fatality Rate
+
+
+Case-Fatality Rate
 <img width="3350" height="1749" alt="image" src="https://github.com/user-attachments/assets/5ada334f-79a0-43af-97fb-dfc6b71976dc" />
-###Vaccinations Recorded Per Day (Global Information off 10000 data points):
+
+
+Vaccinations Recorded Per Day (Global Information off 10000 data points):
 <img width="3338" height="1765" alt="image" src="https://github.com/user-attachments/assets/a2fa9e56-5385-4c77-873f-7b0923619b36" />
 
-###Vaccinations Recorded Per Day (With Selected Countries):
+
+Vaccinations Recorded Per Day (With Selected Countries):
 <img width="3280" height="1733" alt="image" src="https://github.com/user-attachments/assets/5707e79b-f203-4081-a5c2-81e0d7a2ff21" />
 
